@@ -1,0 +1,110 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo":{
+    "color": {
+      "1": "blink_green", 
+      "2": "red"
+    }
+  },
+  "display": {
+    "separator": " --> ",
+    "color": {
+      "keys": "green",
+      "title": "red"
+    },
+    "key": {
+      "paddingLeft": 5,
+       "width": 15,
+      "type": "icon"
+    },
+    "bar": {
+      "width": 15,
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      }
+    },
+    "percent": {
+      "type": 2,
+      "color": {
+        "green": "green",
+        "red": "light_red",
+        "yellow": "light_yellow"
+      }
+    }
+  },
+  "modules": [
+    
+    "title",
+
+  {
+    "type": "custom",
+    "format": "\u001b[90m┌────────────────────────────────────────────────────────────┐"
+  },
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+
+    {
+      "type": "custom",
+      "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤"
+    },
+
+    "terminal",
+    "shell",
+    "packages",
+
+    {
+      "type": "custom",
+      "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤"
+    },
+    
+    "display",
+    "wm",
+    "terminal",
+
+    {
+      "type": "custom",
+      "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤"
+    },
+
+    {
+      "type": "memory",
+      "percent": {
+        "green": 20,
+        "yellow": 70 
+      }
+    },
+    {
+      "type": "swap",
+      "percent": {
+        "green": 20,
+        "yellow": 70 
+      }
+    },
+    {
+      "type": "disk",
+      "percent": {
+        "green": 20,
+        "yellow": 70 
+      }
+    },
+
+    
+    {
+      "type": "custom",
+      "format": "\u001b[90m├─────────────────────────────────────────────────────────────┤"
+    },
+    
+
+    "cpu",
+    "gpu", 
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────────────┘"
+    },
+   
+    "colors"
+  ]
+}
